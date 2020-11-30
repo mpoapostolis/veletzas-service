@@ -41,9 +41,8 @@ a {
   background-attachment: scroll;
   background-size: cover;
 }
+
 .masthead h1 {
-  font-size: 6.5rem;
-  line-height: 6.5rem;
   text-transform: capitalize;
   letter-spacing: 0.8rem;
   background: -webkit-linear-gradient(
@@ -75,4 +74,8 @@ a {
     rgba(22, 22, 22, 0.9) 75%,
     #161616 100%
   );
+}
+
+.black-background {
+  background: #000c;
 }
