@@ -1,5 +1,5 @@
 {
-  "name": "veletzas-service",
+  "name": "nextjs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,13 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.3",
+    "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.0.4",
-    "postcss": "^8.1.10",
-    "tailwindcss": "^2.0.1"
   }
 }

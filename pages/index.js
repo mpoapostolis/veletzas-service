@@ -1,28 +1,17 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useState } from "react";
 import Header from "../components/Header";
 
 export default function Home() {
-  const [fillHeader, setFillHeader] = useState();
-
   return (
-    <div
-      onWheel={(evt) => {
-        if (window && !fillHeader && window.scrollY > 100) {
-          setFillHeader("black-background");
-        } else if (window && fillHeader && window.scrollY < 100) {
-          setFillHeader(undefined);
-        }
-      }}
-    >
+    <>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Header fillHeader={fillHeader} />
-        <div className="masthead  h-screen items-center   bg-gray flex justify-center flex-col text-center">
+        <Header />
+        <div className="masthead items-center bg-gray flex justify-center flex-col text-center">
           <h1 className="mx-auto text-5xl md:text-8xl  mt-2 ">
             VELETZAS <br /> SERVICE
           </h1>
@@ -353,6 +342,6 @@ export default function Home() {
           </span>
         </div>
       </footer>
-    </div>
+    </>
   );
 }

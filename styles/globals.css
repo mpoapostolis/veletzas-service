@@ -1,3 +1,10 @@
+/* ./styles/global.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 html,
 body {
   padding: 0;
@@ -17,16 +24,10 @@ a {
   box-sizing: border-box;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
-
 .masthead {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100vh;
   min-height: 35rem;
   padding: 15rem 0;
   background: linear-gradient(
